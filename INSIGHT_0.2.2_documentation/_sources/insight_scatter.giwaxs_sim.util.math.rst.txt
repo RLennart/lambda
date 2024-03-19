@@ -1,0 +1,37 @@
+insight\_scatter.giwaxs\_sim.util.math package
+==============================================
+
+Submodules
+----------
+
+insight\_scatter.giwaxs\_sim.util.math.calculations module
+----------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.util.math.calculations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.util.math.logic module
+---------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.util.math.logic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.util.math.vector\_operations module
+----------------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.util.math.vector_operations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: insight_scatter.giwaxs_sim.util.math
+   :members:
+   :undoc-members:
+   :show-inheritance:

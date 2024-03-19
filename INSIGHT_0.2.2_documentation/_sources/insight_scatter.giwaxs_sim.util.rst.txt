@@ -1,0 +1,37 @@
+insight\_scatter.giwaxs\_sim.util package
+=========================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   insight_scatter.giwaxs_sim.util.math
+
+Submodules
+----------
+
+insight\_scatter.giwaxs\_sim.util.io module
+-------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.util.io
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.util.plotter module
+------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.util.plotter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: insight_scatter.giwaxs_sim.util
+   :members:
+   :undoc-members:
+   :show-inheritance:

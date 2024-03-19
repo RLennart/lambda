@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>insight_scatter &mdash; insight_scatter 0.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="insight_scatter package" href="insight_scatter.html" />
+    <link rel="prev" title="Welcome to INSIGHT’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            insight_scatter
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">insight_scatter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html">insight_scatter package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">insight_scatter</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">insight_scatter</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="insight-scatter">
+<h1>insight_scatter<a class="headerlink" href="#insight-scatter" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="insight_scatter.html">insight_scatter package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.html">insight_scatter.giwaxs_sim package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#module-insight_scatter.giwaxs_sim.generator">insight_scatter.giwaxs_sim.generator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#module-insight_scatter.giwaxs_sim.probability_distributions">insight_scatter.giwaxs_sim.probability_distributions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#module-insight_scatter.giwaxs_sim.sim">insight_scatter.giwaxs_sim.sim module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#module-insight_scatter.giwaxs_sim.sim_params">insight_scatter.giwaxs_sim.sim_params module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#module-insight_scatter.giwaxs_sim">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.batch">insight_scatter.batch module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.batch.Batch"><code class="docutils literal notranslate"><span class="pre">Batch</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.batch.Batch.activate_liveplotting"><code class="docutils literal notranslate"><span class="pre">Batch.activate_liveplotting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.batch.Batch.run"><code class="docutils literal notranslate"><span class="pre">Batch.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.batch.Batch.set_processing_code"><code class="docutils literal notranslate"><span class="pre">Batch.set_processing_code()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.chrono">insight_scatter.chrono module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoTool"><code class="docutils literal notranslate"><span class="pre">ChronoTool</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoTool.debug"><code class="docutils literal notranslate"><span class="pre">ChronoTool.debug()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoTool.flush"><code class="docutils literal notranslate"><span class="pre">ChronoTool.flush()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoTool.format"><code class="docutils literal notranslate"><span class="pre">ChronoTool.format()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoTool.log"><code class="docutils literal notranslate"><span class="pre">ChronoTool.log()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoTool.normalize"><code class="docutils literal notranslate"><span class="pre">ChronoTool.normalize()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoToolWrapper"><code class="docutils literal notranslate"><span class="pre">ChronoToolWrapper</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoToolWrapper.debug"><code class="docutils literal notranslate"><span class="pre">ChronoToolWrapper.debug()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoToolWrapper.flush"><code class="docutils literal notranslate"><span class="pre">ChronoToolWrapper.flush()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoToolWrapper.format"><code class="docutils literal notranslate"><span class="pre">ChronoToolWrapper.format()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoToolWrapper.log"><code class="docutils literal notranslate"><span class="pre">ChronoToolWrapper.log()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.chrono.ChronoToolWrapper.normalize"><code class="docutils literal notranslate"><span class="pre">ChronoToolWrapper.normalize()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.cutsaxs">insight_scatter.cutsaxs module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS"><code class="docutils literal notranslate"><span class="pre">CutSAXS</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS.bin_cut"><code class="docutils literal notranslate"><span class="pre">CutSAXS.bin_cut()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS.clear_plot"><code class="docutils literal notranslate"><span class="pre">CutSAXS.clear_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS.exec_cut"><code class="docutils literal notranslate"><span class="pre">CutSAXS.exec_cut()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS.guess_along_saxs"><code class="docutils literal notranslate"><span class="pre">CutSAXS.guess_along_saxs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS.plot_grained"><code class="docutils literal notranslate"><span class="pre">CutSAXS.plot_grained()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS.plot_raw"><code class="docutils literal notranslate"><span class="pre">CutSAXS.plot_raw()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutsaxs.CutSAXS.print_cut_angles"><code class="docutils literal notranslate"><span class="pre">CutSAXS.print_cut_angles()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.cutwaxs">insight_scatter.cutwaxs module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS"><code class="docutils literal notranslate"><span class="pre">CutWAXS</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.bin_cut"><code class="docutils literal notranslate"><span class="pre">CutWAXS.bin_cut()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.clear_plot"><code class="docutils literal notranslate"><span class="pre">CutWAXS.clear_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.exec_cut"><code class="docutils literal notranslate"><span class="pre">CutWAXS.exec_cut()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.find_peak_position"><code class="docutils literal notranslate"><span class="pre">CutWAXS.find_peak_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.guess_along_waxs"><code class="docutils literal notranslate"><span class="pre">CutWAXS.guess_along_waxs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.optimize_tube_cut_q_limits"><code class="docutils literal notranslate"><span class="pre">CutWAXS.optimize_tube_cut_q_limits()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.plot_bg_corrected"><code class="docutils literal notranslate"><span class="pre">CutWAXS.plot_bg_corrected()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.plot_binned"><code class="docutils literal notranslate"><span class="pre">CutWAXS.plot_binned()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.plot_raw"><code class="docutils literal notranslate"><span class="pre">CutWAXS.plot_raw()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.cutwaxs.CutWAXS.subtract_local_background"><code class="docutils literal notranslate"><span class="pre">CutWAXS.subtract_local_background()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.fitcut">insight_scatter.fitcut module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut"><code class="docutils literal notranslate"><span class="pre">FitCut</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.allparam_setup"><code class="docutils literal notranslate"><span class="pre">FitCut.allparam_setup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.catch_param_input"><code class="docutils literal notranslate"><span class="pre">FitCut.catch_param_input()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.hyperbola"><code class="docutils literal notranslate"><span class="pre">FitCut.hyperbola()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.load_counters"><code class="docutils literal notranslate"><span class="pre">FitCut.load_counters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.make_params"><code class="docutils literal notranslate"><span class="pre">FitCut.make_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.plot_init_and_final_fit"><code class="docutils literal notranslate"><span class="pre">FitCut.plot_init_and_final_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.polynomial"><code class="docutils literal notranslate"><span class="pre">FitCut.polynomial()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.range_include"><code class="docutils literal notranslate"><span class="pre">FitCut.range_include()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.fitcut.FitCut.setup_model_components"><code class="docutils literal notranslate"><span class="pre">FitCut.setup_model_components()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.geometrycalculations">insight_scatter.geometrycalculations module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.main"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.main()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.plot_geo_map"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.plot_geo_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.plot_geo_map_all"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.plot_geo_map_all()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.plot_geometry_3d"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.plot_geometry_3d()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.qr_chi_calc"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.qr_chi_calc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.qr_chi_calc_numexpr"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.qr_chi_calc_numexpr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.save"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.save()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.save_dict"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.save_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.geometrycalculations.GeometryCalculations.save_map"><code class="docutils literal notranslate"><span class="pre">GeometryCalculations.save_map()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.intensitycorrections">insight_scatter.intensitycorrections module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.air_attenuation_correction"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.air_attenuation_correction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.air_attenuation_correction_boosted"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.air_attenuation_correction_boosted()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.air_attenuation_correction_numexpr"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.air_attenuation_correction_numexpr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.angular_pixel_sensitivity_correction"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.angular_pixel_sensitivity_correction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.angular_pixel_sensitivity_correction_boosted"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.angular_pixel_sensitivity_correction_boosted()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.angular_pixel_sensitivity_correction_numexpr"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.angular_pixel_sensitivity_correction_numexpr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.main"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.main()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.plot_corr_map"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.plot_corr_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.plot_corr_map_all"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.plot_corr_map_all()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.polarization_correction"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.polarization_correction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.polarization_correction_boosted"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.polarization_correction_boosted()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.polarization_correction_numexpr"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.polarization_correction_numexpr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.solid_angle_correction"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.solid_angle_correction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.solid_angle_correction_boosted"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.solid_angle_correction_boosted()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.intensitycorrections.IntensityCorrections.solid_angle_correction_numexpr"><code class="docutils literal notranslate"><span class="pre">IntensityCorrections.solid_angle_correction_numexpr()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.nexusconverter">insight_scatter.nexusconverter module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.nexusconverter.NexusConverter"><code class="docutils literal notranslate"><span class="pre">NexusConverter</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.nexusconverter.NexusConverter.construct_image"><code class="docutils literal notranslate"><span class="pre">NexusConverter.construct_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.nexusconverter.NexusConverter.export2cbf"><code class="docutils literal notranslate"><span class="pre">NexusConverter.export2cbf()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.nexusconverter.dialogue_folder_module_selection"><code class="docutils literal notranslate"><span class="pre">dialogue_folder_module_selection()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.params">insight_scatter.params module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params"><code class="docutils literal notranslate"><span class="pre">Params</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.essential_params"><code class="docutils literal notranslate"><span class="pre">Params.essential_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.fill"><code class="docutils literal notranslate"><span class="pre">Params.fill()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.get_essential_params_keys"><code class="docutils literal notranslate"><span class="pre">Params.get_essential_params_keys()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.get_params"><code class="docutils literal notranslate"><span class="pre">Params.get_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.get_single_dict"><code class="docutils literal notranslate"><span class="pre">Params.get_single_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.main"><code class="docutils literal notranslate"><span class="pre">Params.main()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.params_import"><code class="docutils literal notranslate"><span class="pre">Params.params_import()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.print_params"><code class="docutils literal notranslate"><span class="pre">Params.print_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_air_attenuation_coeff"><code class="docutils literal notranslate"><span class="pre">Params.set_air_attenuation_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_db_x"><code class="docutils literal notranslate"><span class="pre">Params.set_db_x()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_db_y"><code class="docutils literal notranslate"><span class="pre">Params.set_db_y()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_det_rot_x"><code class="docutils literal notranslate"><span class="pre">Params.set_det_rot_x()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_det_rot_y"><code class="docutils literal notranslate"><span class="pre">Params.set_det_rot_y()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_det_rot_z"><code class="docutils literal notranslate"><span class="pre">Params.set_det_rot_z()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_det_thickness"><code class="docutils literal notranslate"><span class="pre">Params.set_det_thickness()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_energy"><code class="docutils literal notranslate"><span class="pre">Params.set_energy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_horizontal_polarization_fraction"><code class="docutils literal notranslate"><span class="pre">Params.set_horizontal_polarization_fraction()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_inca"><code class="docutils literal notranslate"><span class="pre">Params.set_inca()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_px_size"><code class="docutils literal notranslate"><span class="pre">Params.set_px_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_sdd"><code class="docutils literal notranslate"><span class="pre">Params.set_sdd()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_si_attenuation_coeff"><code class="docutils literal notranslate"><span class="pre">Params.set_si_attenuation_coeff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_spec_x_y"><code class="docutils literal notranslate"><span class="pre">Params.set_spec_x_y()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.params.Params.set_wl"><code class="docutils literal notranslate"><span class="pre">Params.set_wl()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.peakfinder">insight_scatter.peakfinder module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.peakfinder.PeakFinder"><code class="docutils literal notranslate"><span class="pre">PeakFinder</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.singleimage">insight_scatter.singleimage module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage"><code class="docutils literal notranslate"><span class="pre">SingleImage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.add_reshape_params"><code class="docutils literal notranslate"><span class="pre">SingleImage.add_reshape_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.apply_flatfield"><code class="docutils literal notranslate"><span class="pre">SingleImage.apply_flatfield()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.apply_gap_mask"><code class="docutils literal notranslate"><span class="pre">SingleImage.apply_gap_mask()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.apply_pixel_mask"><code class="docutils literal notranslate"><span class="pre">SingleImage.apply_pixel_mask()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.calculate_corrected_intensity"><code class="docutils literal notranslate"><span class="pre">SingleImage.calculate_corrected_intensity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.calculate_geometry"><code class="docutils literal notranslate"><span class="pre">SingleImage.calculate_geometry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.cleanup"><code class="docutils literal notranslate"><span class="pre">SingleImage.cleanup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.clear_reshaped_plot"><code class="docutils literal notranslate"><span class="pre">SingleImage.clear_reshaped_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.clear_reshaped_plot_chiq"><code class="docutils literal notranslate"><span class="pre">SingleImage.clear_reshaped_plot_chiq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.create_cut_saxs"><code class="docutils literal notranslate"><span class="pre">SingleImage.create_cut_saxs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.create_cut_waxs"><code class="docutils literal notranslate"><span class="pre">SingleImage.create_cut_waxs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.delete_hot_pixels"><code class="docutils literal notranslate"><span class="pre">SingleImage.delete_hot_pixels()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.denoise"><code class="docutils literal notranslate"><span class="pre">SingleImage.denoise()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.fliplr"><code class="docutils literal notranslate"><span class="pre">SingleImage.fliplr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.flipud"><code class="docutils literal notranslate"><span class="pre">SingleImage.flipud()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.list_cuts"><code class="docutils literal notranslate"><span class="pre">SingleImage.list_cuts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.main"><code class="docutils literal notranslate"><span class="pre">SingleImage.main()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.optimize_sdd"><code class="docutils literal notranslate"><span class="pre">SingleImage.optimize_sdd()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_cut_outline_saxs"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_cut_outline_saxs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_cut_outline_waxs"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_cut_outline_waxs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_flatfield"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_flatfield()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_gap_mask"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_gap_mask()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_local_bg_annuli"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_local_bg_annuli()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_raw_image"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_raw_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_reshaped_chiq"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_reshaped_chiq()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.plot_reshaped_image"><code class="docutils literal notranslate"><span class="pre">SingleImage.plot_reshaped_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.rot90"><code class="docutils literal notranslate"><span class="pre">SingleImage.rot90()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.save"><code class="docutils literal notranslate"><span class="pre">SingleImage.save()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.save_cut"><code class="docutils literal notranslate"><span class="pre">SingleImage.save_cut()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="insight_scatter.html#insight_scatter.singleimage.SingleImage.transpose"><code class="docutils literal notranslate"><span class="pre">SingleImage.transpose()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.staticfunctions">insight_scatter.staticfunctions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.SLD_to_qc"><code class="docutils literal notranslate"><span class="pre">SLD_to_qc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.afs_to_qz"><code class="docutils literal notranslate"><span class="pre">afs_to_qz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.apply_gap_mask"><code class="docutils literal notranslate"><span class="pre">apply_gap_mask()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.binary_image"><code class="docutils literal notranslate"><span class="pre">binary_image()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.binning"><code class="docutils literal notranslate"><span class="pre">binning()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.binning_stats"><code class="docutils literal notranslate"><span class="pre">binning_stats()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.brute_filling"><code class="docutils literal notranslate"><span class="pre">brute_filling()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.calc_missing_wedge"><code class="docutils literal notranslate"><span class="pre">calc_missing_wedge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.calc_missing_wedge_bottom"><code class="docutils literal notranslate"><span class="pre">calc_missing_wedge_bottom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.calc_spec_beam_pos"><code class="docutils literal notranslate"><span class="pre">calc_spec_beam_pos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.calculate_detectormask"><code class="docutils literal notranslate"><span class="pre">calculate_detectormask()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.construct_lambda_composite_from_single_modules"><code class="docutils literal notranslate"><span class="pre">construct_lambda_composite_from_single_modules()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.correct_sdd"><code class="docutils literal notranslate"><span class="pre">correct_sdd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.criticalAngle"><code class="docutils literal notranslate"><span class="pre">criticalAngle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.d_to_q"><code class="docutils literal notranslate"><span class="pre">d_to_q()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.eV_to_nm"><code class="docutils literal notranslate"><span class="pre">eV_to_nm()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.fast_binning"><code class="docutils literal notranslate"><span class="pre">fast_binning()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.fast_binning_chi_q"><code class="docutils literal notranslate"><span class="pre">fast_binning_chi_q()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.fill_masked_pixels"><code class="docutils literal notranslate"><span class="pre">fill_masked_pixels()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.find_gaps"><code class="docutils literal notranslate"><span class="pre">find_gaps()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.find_gaps_v2"><code class="docutils literal notranslate"><span class="pre">find_gaps_v2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.fold"><code class="docutils literal notranslate"><span class="pre">fold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.getGaussArray"><code class="docutils literal notranslate"><span class="pre">getGaussArray()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.getLorentz"><code class="docutils literal notranslate"><span class="pre">getLorentz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.getQ"><code class="docutils literal notranslate"><span class="pre">getQ()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.getQz"><code class="docutils literal notranslate"><span class="pre">getQz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_convex_hull"><code class="docutils literal notranslate"><span class="pre">get_convex_hull()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_golden_roatio"><code class="docutils literal notranslate"><span class="pre">get_golden_roatio()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_lmfitModel_1g"><code class="docutils literal notranslate"><span class="pre">get_lmfitModel_1g()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_lmfitModel_1l"><code class="docutils literal notranslate"><span class="pre">get_lmfitModel_1l()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_missing_1D_data_ranges"><code class="docutils literal notranslate"><span class="pre">get_missing_1D_data_ranges()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_outlier_pixel_mask"><code class="docutils literal notranslate"><span class="pre">get_outlier_pixel_mask()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_time_from_header"><code class="docutils literal notranslate"><span class="pre">get_time_from_header()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_version_info"><code class="docutils literal notranslate"><span class="pre">get_version_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.get_weights_poisson"><code class="docutils literal notranslate"><span class="pre">get_weights_poisson()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.graining"><code class="docutils literal notranslate"><span class="pre">graining()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.guess2params"><code class="docutils literal notranslate"><span class="pre">guess2params()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.hkl_format"><code class="docutils literal notranslate"><span class="pre">hkl_format()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.import_cakeCut"><code class="docutils literal notranslate"><span class="pre">import_cakeCut()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.import_tubeCut"><code class="docutils literal notranslate"><span class="pre">import_tubeCut()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.include_range"><code class="docutils literal notranslate"><span class="pre">include_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.include_range1D"><code class="docutils literal notranslate"><span class="pre">include_range1D()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.interpolation"><code class="docutils literal notranslate"><span class="pre">interpolation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.kernelling"><code class="docutils literal notranslate"><span class="pre">kernelling()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.lambda_composite2single_modules"><code class="docutils literal notranslate"><span class="pre">lambda_composite2single_modules()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.lmfit_simple_fit"><code class="docutils literal notranslate"><span class="pre">lmfit_simple_fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.load_aux_file"><code class="docutils literal notranslate"><span class="pre">load_aux_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.make_CutArray"><code class="docutils literal notranslate"><span class="pre">make_CutArray()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.make_hkl_string"><code class="docutils literal notranslate"><span class="pre">make_hkl_string()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.maps_plot_fast"><code class="docutils literal notranslate"><span class="pre">maps_plot_fast()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.mask_inner_data"><code class="docutils literal notranslate"><span class="pre">mask_inner_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.mask_nans"><code class="docutils literal notranslate"><span class="pre">mask_nans()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.mask_outer_data"><code class="docutils literal notranslate"><span class="pre">mask_outer_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.mirror_rot_array"><code class="docutils literal notranslate"><span class="pre">mirror_rot_array()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.nantozero1d"><code class="docutils literal notranslate"><span class="pre">nantozero1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.nantozero2d"><code class="docutils literal notranslate"><span class="pre">nantozero2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.nearest_neighbor_filling"><code class="docutils literal notranslate"><span class="pre">nearest_neighbor_filling()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.nm_to_eV"><code class="docutils literal notranslate"><span class="pre">nm_to_eV()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.overload"><code class="docutils literal notranslate"><span class="pre">overload()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.piecewise_binning"><code class="docutils literal notranslate"><span class="pre">piecewise_binning()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.plot_fit_components"><code class="docutils literal notranslate"><span class="pre">plot_fit_components()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.polish_bool_mask"><code class="docutils literal notranslate"><span class="pre">polish_bool_mask()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.print_licence"><code class="docutils literal notranslate"><span class="pre">print_licence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.print_licence_short"><code class="docutils literal notranslate"><span class="pre">print_licence_short()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.q_to_2theta"><code class="docutils literal notranslate"><span class="pre">q_to_2theta()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.q_to_d"><code class="docutils literal notranslate"><span class="pre">q_to_d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.qz_to_afs"><code class="docutils literal notranslate"><span class="pre">qz_to_afs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.rotate"><code class="docutils literal notranslate"><span class="pre">rotate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.save_fabio"><code class="docutils literal notranslate"><span class="pre">save_fabio()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.scherrer_domain_size"><code class="docutils literal notranslate"><span class="pre">scherrer_domain_size()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.set_plot_style"><code class="docutils literal notranslate"><span class="pre">set_plot_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.sld_to_ac"><code class="docutils literal notranslate"><span class="pre">sld_to_ac()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.smooth"><code class="docutils literal notranslate"><span class="pre">smooth()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.sort_natural"><code class="docutils literal notranslate"><span class="pre">sort_natural()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.sum_images"><code class="docutils literal notranslate"><span class="pre">sum_images()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.switch_energy_wavelength"><code class="docutils literal notranslate"><span class="pre">switch_energy_wavelength()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.truncated_gauss"><code class="docutils literal notranslate"><span class="pre">truncated_gauss()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.twotheta_to_d"><code class="docutils literal notranslate"><span class="pre">twotheta_to_d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.twotheta_to_q"><code class="docutils literal notranslate"><span class="pre">twotheta_to_q()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.valtoval"><code class="docutils literal notranslate"><span class="pre">valtoval()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.zerotonan1d"><code class="docutils literal notranslate"><span class="pre">zerotonan1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.zerotonan2d"><code class="docutils literal notranslate"><span class="pre">zerotonan2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#insight_scatter.staticfunctions.zerotoval2d"><code class="docutils literal notranslate"><span class="pre">zerotoval2d()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.html#module-insight_scatter">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to INSIGHT’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="insight_scatter.html" class="btn btn-neutral float-right" title="insight_scatter package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Manuel Reus and Lennart Reb, TU Munich.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

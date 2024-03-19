@@ -1,0 +1,117 @@
+insight\_scatter package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   insight_scatter.giwaxs_sim
+
+Submodules
+----------
+
+insight\_scatter.batch module
+-----------------------------
+
+.. automodule:: insight_scatter.batch
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.chrono module
+------------------------------
+
+.. automodule:: insight_scatter.chrono
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.cutsaxs module
+-------------------------------
+
+.. automodule:: insight_scatter.cutsaxs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.cutwaxs module
+-------------------------------
+
+.. automodule:: insight_scatter.cutwaxs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.fitcut module
+------------------------------
+
+.. automodule:: insight_scatter.fitcut
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.geometrycalculations module
+--------------------------------------------
+
+.. automodule:: insight_scatter.geometrycalculations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.intensitycorrections module
+--------------------------------------------
+
+.. automodule:: insight_scatter.intensitycorrections
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.nexusconverter module
+--------------------------------------
+
+.. automodule:: insight_scatter.nexusconverter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.params module
+------------------------------
+
+.. automodule:: insight_scatter.params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.peakfinder module
+----------------------------------
+
+.. automodule:: insight_scatter.peakfinder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.singleimage module
+-----------------------------------
+
+.. automodule:: insight_scatter.singleimage
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.staticfunctions module
+---------------------------------------
+
+.. automodule:: insight_scatter.staticfunctions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: insight_scatter
+   :members:
+   :undoc-members:
+   :show-inheritance:

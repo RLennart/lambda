@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>insight_scatter.giwaxs_sim.util package &mdash; insight_scatter 0.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="insight_scatter.giwaxs_sim.util.math package" href="insight_scatter.giwaxs_sim.util.math.html" />
+    <link rel="prev" title="insight_scatter.giwaxs_sim.crystals package" href="insight_scatter.giwaxs_sim.crystals.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            insight_scatter
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">insight_scatter</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="insight_scatter.html">insight_scatter package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="insight_scatter.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="insight_scatter.giwaxs_sim.html">insight_scatter.giwaxs_sim package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.batch">insight_scatter.batch module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.chrono">insight_scatter.chrono module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.cutsaxs">insight_scatter.cutsaxs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.cutwaxs">insight_scatter.cutwaxs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.fitcut">insight_scatter.fitcut module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.geometrycalculations">insight_scatter.geometrycalculations module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.intensitycorrections">insight_scatter.intensitycorrections module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.nexusconverter">insight_scatter.nexusconverter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.params">insight_scatter.params module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.peakfinder">insight_scatter.peakfinder module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.singleimage">insight_scatter.singleimage module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.staticfunctions">insight_scatter.staticfunctions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">insight_scatter</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">insight_scatter</a></li>
+          <li class="breadcrumb-item"><a href="insight_scatter.html">insight_scatter package</a></li>
+          <li class="breadcrumb-item"><a href="insight_scatter.giwaxs_sim.html">insight_scatter.giwaxs_sim package</a></li>
+      <li class="breadcrumb-item active">insight_scatter.giwaxs_sim.util package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/insight_scatter.giwaxs_sim.util.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="insight-scatter-giwaxs-sim-util-package">
+<h1>insight_scatter.giwaxs_sim.util package<a class="headerlink" href="#insight-scatter-giwaxs-sim-util-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html">insight_scatter.giwaxs_sim.util.math package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#module-insight_scatter.giwaxs_sim.util.math.calculations">insight_scatter.giwaxs_sim.util.math.calculations module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.calculations.calc_basis_vectors"><code class="docutils literal notranslate"><span class="pre">calc_basis_vectors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.calculations.calc_metric_tensor"><code class="docutils literal notranslate"><span class="pre">calc_metric_tensor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.calculations.calc_orientation_rotation"><code class="docutils literal notranslate"><span class="pre">calc_orientation_rotation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.calculations.calc_q_reflex"><code class="docutils literal notranslate"><span class="pre">calc_q_reflex()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#module-insight_scatter.giwaxs_sim.util.math.logic">insight_scatter.giwaxs_sim.util.math.logic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.logic.implies"><code class="docutils literal notranslate"><span class="pre">implies()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.logic.match_mask"><code class="docutils literal notranslate"><span class="pre">match_mask()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#module-insight_scatter.giwaxs_sim.util.math.vector_operations">insight_scatter.giwaxs_sim.util.math.vector_operations module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.vector_operations.vec_angle"><code class="docutils literal notranslate"><span class="pre">vec_angle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#insight_scatter.giwaxs_sim.util.math.vector_operations.vec_rotate"><code class="docutils literal notranslate"><span class="pre">vec_rotate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="insight_scatter.giwaxs_sim.util.math.html#module-insight_scatter.giwaxs_sim.util.math">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-insight_scatter.giwaxs_sim.util.io">
+<span id="insight-scatter-giwaxs-sim-util-io-module"></span><h2>insight_scatter.giwaxs_sim.util.io module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.util.io" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.util.io.export_intensity_map">
+<span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.util.io.</span></span><span class="sig-name descname"><span class="pre">export_intensity_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">intensity_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#insight_scatter.giwaxs_sim.util.io.export_intensity_map" title="Permalink to this definition"></a></dt>
+<dd><p>Exports an intensity map to the specified file path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>intensity_map</strong> (<em>npt.NDArray</em><em>[</em><em>Any</em><em>]</em>) – Intensity map.</p></li>
+<li><p><strong>file_path</strong> (<em>Path</em>) – Export file path.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.util.io.export_params">
+<span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.util.io.</span></span><span class="sig-name descname"><span class="pre">export_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sim_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="insight_scatter.giwaxs_sim.html#insight_scatter.giwaxs_sim.sim_params.SimParams" title="insight_scatter.giwaxs_sim.sim_params.SimParams"><span class="pre">SimParams</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#insight_scatter.giwaxs_sim.util.io.export_params" title="Permalink to this definition"></a></dt>
+<dd><p>Exports the intensity map generation parameters to the specified file path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sim_params</strong> (<a class="reference internal" href="insight_scatter.giwaxs_sim.html#insight_scatter.giwaxs_sim.sim_params.SimParams" title="insight_scatter.giwaxs_sim.sim_params.SimParams"><em>SimParams</em></a>) – SimParams object containing all relevant parameters.</p></li>
+<li><p><strong>id</strong> (<em>str:</em>) – Intensity map generation ID.</p></li>
+<li><p><strong>file_path</strong> (<em>Path</em>) – Export file path.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.util.plotter">
+<span id="insight-scatter-giwaxs-sim-util-plotter-module"></span><h2>insight_scatter.giwaxs_sim.util.plotter module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.util.plotter" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.util.plotter.plot_combined_q_data">
+<span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.util.plotter.</span></span><span class="sig-name descname"><span class="pre">plot_combined_q_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Axes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combined_q_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#insight_scatter.giwaxs_sim.util.plotter.plot_combined_q_data" title="Permalink to this definition"></a></dt>
+<dd><p>Plots single reflexes for a set of hkl vectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ax</strong> (<em>plt.Axes</em>) – Plot axes.</p></li>
+<li><p><strong>combined_q_data</strong> (<em>list</em><em>[</em><em>tuple</em><em>[</em><em>list</em><em>[</em><em>npt.NDArray</em><em>[</em><em>Any</em><em>]</em><em>]</em><em>, </em><em>tuple</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em><em>, </em><em>float</em><em>]</em><em>]</em>) – List of (hkls, (q_r, q_z), total_intensity) tuples with hkls being the list of hkl vectors that yielded the (q_r, q_z) tuple.</p></li>
+<li><p><strong>show_labels</strong> (<em>bool</em><em>, </em><em>default: True</em>) – If True: Shows the causing hkl vectors next to the data point.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.util.plotter.plot_intensity_map">
+<span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.util.plotter.</span></span><span class="sig-name descname"><span class="pre">plot_intensity_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Axes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intensity_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#insight_scatter.giwaxs_sim.util.plotter.plot_intensity_map" title="Permalink to this definition"></a></dt>
+<dd><p>Plots an intensity map.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ax</strong> (<em>plt.Axes</em>) – Plot axes.</p></li>
+<li><p><strong>intensity_map</strong> (<em>npt.NDArray</em><em>[</em><em>Any</em><em>]</em>) – Intensity map.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.util">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.util" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="insight_scatter.giwaxs_sim.crystals.html" class="btn btn-neutral float-left" title="insight_scatter.giwaxs_sim.crystals package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="insight_scatter.giwaxs_sim.util.math.html" class="btn btn-neutral float-right" title="insight_scatter.giwaxs_sim.util.math package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Manuel Reus and Lennart Reb, TU Munich.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

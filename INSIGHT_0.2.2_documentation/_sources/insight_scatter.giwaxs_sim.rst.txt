@@ -1,0 +1,54 @@
+insight\_scatter.giwaxs\_sim package
+====================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   insight_scatter.giwaxs_sim.crystals
+   insight_scatter.giwaxs_sim.util
+
+Submodules
+----------
+
+insight\_scatter.giwaxs\_sim.generator module
+---------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.generator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.probability\_distributions module
+--------------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.probability_distributions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.sim module
+---------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.sim
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.sim\_params module
+-----------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.sim_params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: insight_scatter.giwaxs_sim
+   :members:
+   :undoc-members:
+   :show-inheritance:

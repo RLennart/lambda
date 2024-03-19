@@ -1,0 +1,85 @@
+insight\_scatter.giwaxs\_sim.crystals package
+=============================================
+
+Submodules
+----------
+
+insight\_scatter.giwaxs\_sim.crystals.crystal module
+----------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.crystal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.cubic module
+--------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.cubic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.hexagonal module
+------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.hexagonal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.monoclinic module
+-------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.monoclinic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.orthorhombic module
+---------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.orthorhombic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.reflection\_condition module
+------------------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.reflection_condition
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.tetragonal module
+-------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.tetragonal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.triclinic module
+------------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.triclinic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+insight\_scatter.giwaxs\_sim.crystals.trigonal module
+-----------------------------------------------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals.trigonal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: insight_scatter.giwaxs_sim.crystals
+   :members:
+   :undoc-members:
+   :show-inheritance:

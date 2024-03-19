@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>insight_scatter.giwaxs_sim.crystals package &mdash; insight_scatter 0.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="insight_scatter.giwaxs_sim.util package" href="insight_scatter.giwaxs_sim.util.html" />
+    <link rel="prev" title="insight_scatter.giwaxs_sim package" href="insight_scatter.giwaxs_sim.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            insight_scatter
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">insight_scatter</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="insight_scatter.html">insight_scatter package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="insight_scatter.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="insight_scatter.giwaxs_sim.html">insight_scatter.giwaxs_sim package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.batch">insight_scatter.batch module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.chrono">insight_scatter.chrono module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.cutsaxs">insight_scatter.cutsaxs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.cutwaxs">insight_scatter.cutwaxs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.fitcut">insight_scatter.fitcut module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.geometrycalculations">insight_scatter.geometrycalculations module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.intensitycorrections">insight_scatter.intensitycorrections module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.nexusconverter">insight_scatter.nexusconverter module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.params">insight_scatter.params module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.peakfinder">insight_scatter.peakfinder module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.singleimage">insight_scatter.singleimage module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter.staticfunctions">insight_scatter.staticfunctions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="insight_scatter.html#module-insight_scatter">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">insight_scatter</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">insight_scatter</a></li>
+          <li class="breadcrumb-item"><a href="insight_scatter.html">insight_scatter package</a></li>
+          <li class="breadcrumb-item"><a href="insight_scatter.giwaxs_sim.html">insight_scatter.giwaxs_sim package</a></li>
+      <li class="breadcrumb-item active">insight_scatter.giwaxs_sim.crystals package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/insight_scatter.giwaxs_sim.crystals.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="insight-scatter-giwaxs-sim-crystals-package">
+<h1>insight_scatter.giwaxs_sim.crystals package<a class="headerlink" href="#insight-scatter-giwaxs-sim-crystals-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.crystal">
+<span id="insight-scatter-giwaxs-sim-crystals-crystal-module"></span><h2>insight_scatter.giwaxs_sim.crystals.crystal module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.crystal" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.crystal.Crystal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.crystal.</span></span><span class="sig-name descname"><span class="pre">Crystal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crystal_system</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basis_vector_lengths</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Defines a crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>space_group</strong> (<em>int</em>) – Space group.</p></li>
+<li><p><strong>crystal_system</strong> (<em>str</em>) – Crystal system.</p></li>
+<li><p><strong>basis_vector_lengths</strong> (<em>npt.NDArray</em><em>[</em><em>Any</em><em>]</em>) – Lengths of basis vectors a, b, c.</p></li>
+<li><p><strong>angles</strong> (<em>npt.NDArray</em><em>[</em><em>Any</em><em>]</em>) – Angles alpha, beta, gamma between the basis vectors.</p></li>
+<li><p><strong>conditions</strong> (<em>reflection</em>) – List of reflection conditions.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.crystal.Crystal.get_basis_vectors">
+<span class="sig-name descname"><span class="pre">get_basis_vectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reciprocal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal.get_basis_vectors" title="Permalink to this definition"></a></dt>
+<dd><p>Gets the basis vectors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>reciprocal</strong> (<em>bool</em><em>, </em><em>default: True</em>) – If False, returns the direct basis vectors.
+If True, returns the reciprocal basis vectors.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Basis vectors.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.crystal.Crystal.get_hkls">
+<span class="sig-name descname"><span class="pre">get_hkls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hkl_ranges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">range</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">range</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">range</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal.get_hkls" title="Permalink to this definition"></a></dt>
+<dd><p>Gets all possible hkl vectors satisfying the reflection conditions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>hkl_ranges</strong> (<em>tuple</em><em>[</em><em>range</em><em>, </em><em>range</em><em>, </em><em>range</em><em>]</em>) – Ranges for the hkl components.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of hkl vectors.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.crystal.Crystal.get_metric_tensor">
+<span class="sig-name descname"><span class="pre">get_metric_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reciprocal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal.get_metric_tensor" title="Permalink to this definition"></a></dt>
+<dd><p>Gets the metric tensor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>reciprocal</strong> (<em>bool</em><em>, </em><em>default: True</em>) – If False, returns the direct metric tensor.
+If True, returns the reciprocal metric tensor.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Metric tensor.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.cubic">
+<span id="insight-scatter-giwaxs-sim-crystals-cubic-module"></span><h2>insight_scatter.giwaxs_sim.crystals.cubic module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.cubic" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.cubic.Cubic">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.cubic.</span></span><span class="sig-name descname"><span class="pre">Cubic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.cubic.Cubic" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="insight_scatter.giwaxs_sim.crystals.crystal.Crystal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Crystal</span></code></a></p>
+<p>Cubic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.cubic.SG195">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.cubic.</span></span><span class="sig-name descname"><span class="pre">SG195</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.cubic.SG195" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.cubic.Cubic" title="insight_scatter.giwaxs_sim.crystals.cubic.Cubic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cubic</span></code></a></p>
+<p>Cubic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.cubic.SG196">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.cubic.</span></span><span class="sig-name descname"><span class="pre">SG196</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.cubic.SG196" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.cubic.Cubic" title="insight_scatter.giwaxs_sim.crystals.cubic.Cubic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cubic</span></code></a></p>
+<p>Cubic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.cubic.SG221">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.cubic.</span></span><span class="sig-name descname"><span class="pre">SG221</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.cubic.SG221" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.cubic.Cubic" title="insight_scatter.giwaxs_sim.crystals.cubic.Cubic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cubic</span></code></a></p>
+<p>Cubic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.hexagonal">
+<span id="insight-scatter-giwaxs-sim-crystals-hexagonal-module"></span><h2>insight_scatter.giwaxs_sim.crystals.hexagonal module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.hexagonal" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.hexagonal.Hexagonal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.hexagonal.</span></span><span class="sig-name descname"><span class="pre">Hexagonal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.hexagonal.Hexagonal" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="insight_scatter.giwaxs_sim.crystals.crystal.Crystal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Crystal</span></code></a></p>
+<p>Hexagonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.hexagonal.SG168">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.hexagonal.</span></span><span class="sig-name descname"><span class="pre">SG168</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.hexagonal.SG168" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.hexagonal.Hexagonal" title="insight_scatter.giwaxs_sim.crystals.hexagonal.Hexagonal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hexagonal</span></code></a></p>
+<p>Hexagonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.monoclinic">
+<span id="insight-scatter-giwaxs-sim-crystals-monoclinic-module"></span><h2>insight_scatter.giwaxs_sim.crystals.monoclinic module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.monoclinic" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">Monoclinic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="insight_scatter.giwaxs_sim.crystals.crystal.Crystal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Crystal</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG10">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG10</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG10" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG11">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG11</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG11" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG12">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG12</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG12" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG13">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG13</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG13" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG14">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG14</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG14" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG15">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG15</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG15" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG3" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG4">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG4" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG5">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG5" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG6">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG6</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG6" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG7">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG7</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG7" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG8">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG8</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG8" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.monoclinic.SG9">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.monoclinic.</span></span><span class="sig-name descname"><span class="pre">SG9</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.SG9" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic" title="insight_scatter.giwaxs_sim.crystals.monoclinic.Monoclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monoclinic</span></code></a></p>
+<p>Monoclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.orthorhombic">
+<span id="insight-scatter-giwaxs-sim-crystals-orthorhombic-module"></span><h2>insight_scatter.giwaxs_sim.crystals.orthorhombic module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.orthorhombic" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">Orthorhombic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="insight_scatter.giwaxs_sim.crystals.crystal.Crystal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Crystal</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG16">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG16</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG16" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG17">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG17</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG17" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG18">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG18</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG18" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG19">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG19</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG19" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG20">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG20</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG20" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG21">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG21</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG21" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG22">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG22</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG22" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG23">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG23</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG23" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG24">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG24</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG24" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG25">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG25</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG25" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG26">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG26</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG26" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG27">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG27</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG27" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG28">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG28</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG28" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG29">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG29</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG29" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG30">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG30</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG30" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG31">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG31</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG31" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG32">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG32</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG32" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG33">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG33</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG33" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG34">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG34</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG34" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG35">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG35</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG35" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG36">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG36</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG36" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG37">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG37</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG37" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG38">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG38</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG38" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG39">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG39</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG39" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG40">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG40</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG40" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG41">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG41</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG41" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.orthorhombic.SG42">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.orthorhombic.</span></span><span class="sig-name descname"><span class="pre">SG42</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.SG42" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic" title="insight_scatter.giwaxs_sim.crystals.orthorhombic.Orthorhombic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Orthorhombic</span></code></a></p>
+<p>Orthorhombic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.reflection_condition">
+<span id="insight-scatter-giwaxs-sim-crystals-reflection-condition-module"></span><h2>insight_scatter.giwaxs_sim.crystals.reflection_condition module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.reflection_condition" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.</span></span><span class="sig-name descname"><span class="pre">ReflectionCondition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Defines a reflection condition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mask</strong> (<em>tuple</em><em>[</em><em>Any</em><em>, </em><em>Any</em><em>, </em><em>Any</em><em>]</em>) – Mask to match a hkl vector against.</p></li>
+<li><p><strong>condition</strong> (<em>Callable</em><em>[</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>, </em><em>bool</em><em>]</em>) – Function mapping the values h, k, l to a bool.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.tetragonal">
+<span id="insight-scatter-giwaxs-sim-crystals-tetragonal-module"></span><h2>insight_scatter.giwaxs_sim.crystals.tetragonal module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.tetragonal" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.tetragonal.SG127">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.tetragonal.</span></span><span class="sig-name descname"><span class="pre">SG127</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.tetragonal.SG127" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal" title="insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tetragonal</span></code></a></p>
+<p>Tetragonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.tetragonal.SG140">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.tetragonal.</span></span><span class="sig-name descname"><span class="pre">SG140</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.tetragonal.SG140" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal" title="insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tetragonal</span></code></a></p>
+<p>Tetragonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.tetragonal.SG75">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.tetragonal.</span></span><span class="sig-name descname"><span class="pre">SG75</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.tetragonal.SG75" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal" title="insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tetragonal</span></code></a></p>
+<p>Tetragonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.tetragonal.</span></span><span class="sig-name descname"><span class="pre">Tetragonal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.tetragonal.Tetragonal" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="insight_scatter.giwaxs_sim.crystals.crystal.Crystal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Crystal</span></code></a></p>
+<p>Tetragonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.triclinic">
+<span id="insight-scatter-giwaxs-sim-crystals-triclinic-module"></span><h2>insight_scatter.giwaxs_sim.crystals.triclinic module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.triclinic" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.triclinic.SG1">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.triclinic.</span></span><span class="sig-name descname"><span class="pre">SG1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.triclinic.SG1" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.triclinic.Triclinic" title="insight_scatter.giwaxs_sim.crystals.triclinic.Triclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triclinic</span></code></a></p>
+<p>Triclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>alpha</strong> (<em>float</em>) – Angle between b and c in radians.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Angle between a and b in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.triclinic.SG2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.triclinic.</span></span><span class="sig-name descname"><span class="pre">SG2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.triclinic.SG2" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.triclinic.Triclinic" title="insight_scatter.giwaxs_sim.crystals.triclinic.Triclinic"><code class="xref py py-class docutils literal notranslate"><span class="pre">Triclinic</span></code></a></p>
+<p>Triclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>alpha</strong> (<em>float</em>) – Angle between b and c in radians.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Angle between a and b in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.triclinic.Triclinic">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.triclinic.</span></span><span class="sig-name descname"><span class="pre">Triclinic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.triclinic.Triclinic" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="insight_scatter.giwaxs_sim.crystals.crystal.Crystal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Crystal</span></code></a></p>
+<p>Triclinic crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>b_length</strong> (<em>float</em>) – Length of basis vector b.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+<li><p><strong>alpha</strong> (<em>float</em>) – Angle between b and c in radians.</p></li>
+<li><p><strong>beta</strong> (<em>float</em>) – Angle between a and c in radians.</p></li>
+<li><p><strong>gamma</strong> (<em>float</em>) – Angle between a and b in radians.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals.trigonal">
+<span id="insight-scatter-giwaxs-sim-crystals-trigonal-module"></span><h2>insight_scatter.giwaxs_sim.crystals.trigonal module<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals.trigonal" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.trigonal.SG143">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.trigonal.</span></span><span class="sig-name descname"><span class="pre">SG143</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.trigonal.SG143" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.trigonal.Trigonal" title="insight_scatter.giwaxs_sim.crystals.trigonal.Trigonal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trigonal</span></code></a></p>
+<p>Trigonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="insight_scatter.giwaxs_sim.crystals.trigonal.Trigonal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">insight_scatter.giwaxs_sim.crystals.trigonal.</span></span><span class="sig-name descname"><span class="pre">Trigonal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflection_conditions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition" title="insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition"><span class="pre">insight_scatter.giwaxs_sim.crystals.reflection_condition.ReflectionCondition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#insight_scatter.giwaxs_sim.crystals.trigonal.Trigonal" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#insight_scatter.giwaxs_sim.crystals.crystal.Crystal" title="insight_scatter.giwaxs_sim.crystals.crystal.Crystal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Crystal</span></code></a></p>
+<p>Trigonal crystal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_length</strong> (<em>float</em>) – Length of basis vector a.</p></li>
+<li><p><strong>c_length</strong> (<em>float</em>) – Length of basis vector c.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-insight_scatter.giwaxs_sim.crystals">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-insight_scatter.giwaxs_sim.crystals" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="insight_scatter.giwaxs_sim.html" class="btn btn-neutral float-left" title="insight_scatter.giwaxs_sim package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="insight_scatter.giwaxs_sim.util.html" class="btn btn-neutral float-right" title="insight_scatter.giwaxs_sim.util package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Manuel Reus and Lennart Reb, TU Munich.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

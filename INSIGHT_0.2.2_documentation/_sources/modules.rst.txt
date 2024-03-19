@@ -1,0 +1,8 @@
+insight_scatter
+===============
+
+.. toctree::
+   :maxdepth: 4
+
+   insight_scatter
+   ./giwaxs_sim
