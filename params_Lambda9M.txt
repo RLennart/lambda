@@ -1,0 +1,36 @@
+# direct beam coordinates in pixel
+db_x = 5
+db_y = 1578.5
+
+# specular beam position in pixel
+spec_x = 3
+spec_y = 1697
+
+# sample-to-detector distance in mm
+sdd = 240
+
+# incidence angle in degree
+inca = 0.4
+
+# detector pixel size in mm
+px_size = 0.055
+
+# wavelength in Angstrom
+wl = 1.0507
+
+# detector rotation in degree (x along primary beam direction)
+#det_rot_x = -0.6368657183977084
+det_rot_y = 0.0
+det_rot_z = 0.0
+
+# air attenuation coefficient in
+air_attenuation_coeff = 0.0011839
+
+# silicon attenuation coefficient in
+si_attenuation_coeff = 2.33
+
+# detector thickness in mm
+det_thickness = 0.3
+
+# horizontal polarization fraction between 0 and 1, use 'None' for no correction
+horizontal_polarization_fraction = 0.98
